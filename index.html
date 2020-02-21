@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="clock.js"></script>
+    <style type="text/css">
+        .clockdate-wrapper {
+            background-color: #333;
+            padding:30px;
+            max-width:450px;
+            width:100%;
+            text-align:center;
+            border-radius:8px;
+            margin:0 auto;
+            margin-top:15%;
+        }
+        #clock{
+            background-color:#333;
+            font-family: sans-serif;
+            font-size:70px;
+            font-weight: bold;
+            text-shadow:0px 0px 1px #fff;
+            color:#fff;
+        }
+        #clock span {
+            color:#888;
+            text-shadow:0px 0px 1px #333;
+            font-size:40px;
+            position:relative;
+            top:-27px;
+            left:-10px;
+        }
+        #date {
+            letter-spacing:3px;
+            font-size:18px;
+            font-family:arial,sans-serif;
+            color: gray;
+            color:#fff;
+        }
+    </style>
+</head>
+
+<body onload="startTime()">
+    <div id="clockdate">
+        <div class="clockdate-wrapper">
+            <div id="clock"></div>
+            <div id="date"></div>
+        </div>
+    </div>
+</body>
+</html>
